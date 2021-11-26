@@ -1,0 +1,25 @@
+body{
+    background-image: linear-gradient(-90deg,black,blue,blue,black);
+}
+body,html{
+    padding: 0px;
+    margin: 0px;
+}
+#heading{
+    background-image: linear-gradient(-90deg,blue, red);
+    background-size:200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    animation-name: heading-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes heading-animation {
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+}
